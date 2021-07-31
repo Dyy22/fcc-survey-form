@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Discord Staff Application</h1>
+            <p id="description">Silahkan isi pertanyaan di bawah ini
+                sesuai dengan kemampuan kamu</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="username" id="name-label">Username Discord</label>
+                <input type="text" name="name" id="name" placeholder="username#1234" required />
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="you@web.com" required />
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" name="age" id="number" placeholder="13+" min="13" max="99" required />
+            </div>
+
+            <div class="form-group">
+                <p>Gender</p>
+                <label for="male">
+                    <input type="radio" value="male" name="gender" class="input-radio" checked />
+                    Male
+                </label>
+                <label for="female">
+                    <input type="radio" value="female" name="gender" class="input-radio" />
+                    Female
+                </label>
+                <label for="others">
+                    <input type="radio" value="others" name="gender" class="input-radio" />
+                    Others
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>How long can you be online in a day?</p>
+                <select name="online-long" id="online-long" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="0-1-hour">0-1 hour</option>
+                    <option value="1-5-hours">1-5 hours</option>
+                    <option value="5-10-hours">5-10 hours</option>
+                    <option value="10-15-hours">10-15 hours</option>
+                    <option value="15-24-hours">15-24 hours</option>
+                    <option value="24+-hours">24+ hours</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Do you have any previous staff experience?</p>
+                <textarea name="experience" id="experience" cols="30" rows="1" placeholder="Enter your answer"
+                    required></textarea>
+            </div>
+
+            <div class="form-group">
+                <p>Why do you want to be a staff?</p>
+                <textarea name="reason" id="reason" cols="30" rows="1" placeholder="Enter your answer"
+                    required></textarea>
+            </div>
+
+            <div class="form-group">
+                <p>What skills do you have?
+                    <span class="clue">(check all that apply)</span>
+                </p>
+
+                <label for="host">
+                    <input type="checkbox" value="host" name="skill" class="input-checkbox" />
+                    Host
+                </label>
+
+                <label for="design">
+                    <input type="checkbox" value="design" name="skill" class="input-checkbox" />
+                    Design
+                </label>
+
+                <label for="bot-making">
+                    <input type="checkbox" value="bot-making" name="skill" class="input-checkbox" />
+                    Bot Making
+                </label>
+
+                <label for="server-management">
+                    <input type="checkbox" value="server-management" name="skill" class="input-checkbox" />
+                    Server Management
+                </label>
+
+                <label for="partner-management">
+                    <input type="checkbox" value="partner-management" name="skill" class="input-checkbox" />
+                    Partner Management
+                </label>
+
+                <label for="event-organizing">
+                    <input type="checkbox" value="event-organizing" name="skill" class="input-checkbox" />
+                    Event Organizing
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Can you explain about your skills?</p>
+                <textarea name="reason" id="reason" cols="30" rows="1" placeholder="Enter your answer"
+                    required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="ready" id="ready-label">Are you ready to become our staff?</label>
+                <input type="text" name="ready" id="ready" placeholder="Enter your answer" required />
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
