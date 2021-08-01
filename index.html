@@ -19,18 +19,19 @@
 
         <form id="survey-form">
             <div class="form-group">
-                <label for="username" id="name-label">Username Discord</label>
-                <input type="text" name="name" id="name" placeholder="username#1234" required />
+                <label for="name" id="name-label">Username Discord</label>
+                <input type="text" name="name" id="name" placeholder="username#1234" class="form-control" required />
             </div>
 
             <div class="form-group">
                 <label for="email" id="email-label">Email</label>
-                <input type="email" name="email" id="email" placeholder="you@web.com" required />
+                <input type="email" name="email" id="email" placeholder="you@web.com" class="form-control" required />
             </div>
 
             <div class="form-group">
                 <label for="number" id="number-label">Age</label>
-                <input type="number" name="age" id="number" placeholder="13+" min="13" max="99" required />
+                <input type="number" name="number" id="number" placeholder="13+" min="13" max="99" class="form-control"
+                    required />
             </div>
 
             <div class="form-group">
@@ -51,7 +52,7 @@
 
             <div class="form-group">
                 <p>How long can you be online in a day?</p>
-                <select name="online-long" id="online-long" class="form-control" required>
+                <select name="online-long" id="dropdown" class="form-control" required>
                     <option disabled selected value>Select an option</option>
                     <option value="0-1-hour">0-1 hour</option>
                     <option value="1-5-hours">1-5 hours</option>
@@ -63,15 +64,18 @@
             </div>
 
             <div class="form-group">
-                <p>Do you have any previous staff experience?</p>
-                <textarea name="experience" id="experience" cols="30" rows="1" placeholder="Enter your answer"
-                    required></textarea>
+                <label for="experience">
+                    Do
+                    you have any staff experience before?</label>
+                <input type="text" name="experience" id="experience" placeholder="enter your answer"
+                    class="form-control" required />
             </div>
 
             <div class="form-group">
-                <p>Why do you want to be a staff?</p>
-                <textarea name="reason" id="reason" cols="30" rows="1" placeholder="Enter your answer"
-                    required></textarea>
+                <label for="reason">
+                    Why do you want to become a staff?</label>
+                <input type="text" name="reason" id="reason" placeholder="enter your answer" class="form-control"
+                    required>
             </div>
 
             <div class="form-group">
@@ -112,13 +116,14 @@
 
             <div class="form-group">
                 <p>Can you explain about your skills?</p>
-                <textarea name="reason" id="reason" cols="30" rows="1" placeholder="Enter your answer"
-                    required></textarea>
+                <textarea name="reason" id="reason" cols="30" rows="1" placeholder="enter your answer"
+                    class="input-textarea" required></textarea>
             </div>
 
             <div class="form-group">
                 <label for="ready" id="ready-label">Are you ready to become our staff?</label>
-                <input type="text" name="ready" id="ready" placeholder="Enter your answer" required />
+                <input type="text" name="ready" id="ready" placeholder="enter your answer" class="form-control"
+                    required />
             </div>
 
             <div class="form-group">
@@ -126,6 +131,7 @@
             </div>
         </form>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
